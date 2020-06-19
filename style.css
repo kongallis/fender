@@ -1,0 +1,118 @@
+body {
+  min-width: fit-content;
+  margin: 5%;
+  padding: 0;
+}
+div {
+  display: block;
+}
+.navigationBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: orange;
+  /* background-color: orangered; */
+}
+.navigationItems li {
+  list-style-type: none;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+.navigationItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navigationBar img {
+  width: 150px;
+  /* margin-left: auto; */
+}
+
+.searchBar {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.searchBar > * {
+  margin: auto;
+}
+.feautures {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5%;
+  /* margin: auto 5%; */
+}
+/* div.feautures.mr-4.ml-4 {
+  margin: 5%;
+} */
+.howItWorks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+iframe {
+  margin: auto;
+}
+.feauture {
+  margin: 5%;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: row;
+}
+.offer {
+  border: 0.5px solid bisque;
+  border-radius: 1%;
+  flex: 1;
+  text-align: center;
+  width: 20%;
+}
+.offer button {
+  position: relative;
+  margin: 0;
+  bottom: 0px;
+}
+.offer img {
+  height: 45%;
+  width: 50%;
+}
+.productDetails,
+.productTitle,
+.productPrice {
+  padding: 10px;
+}
+.productTitle {
+  background-color: bisque;
+}
+.productPrice {
+  font-weight: bolder;
+  font-size: 20pt;
+}
+.searchBar input {
+  width: 200px;
+}
+.footerBar {
+  margin-top: 10%;
+}
+
+@media (max-width: 360px) {
+  .pricing {
+    display: flex;
+    flex-direction: column;
+  }
+  .offer {
+    flex: 1;
+  }
+}
