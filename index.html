@@ -17,12 +17,12 @@
     ></script>
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav id="nav-bar" class="navigationBar">
         <div id="logo">
           <a href=""
             ><img
-              id="header-image"
+              id="header-img"
               alt="fender-logo"
               src="./img/fender-282756.png"
             />
@@ -41,9 +41,10 @@
         action="https://www.freecodecamp.com/email-submit"
         id="form"
         class="mt-4"
-        method="POST"
+        method="GET"
       >
         <input
+          name="email"
           id="email"
           type="email"
           class="p-1"
