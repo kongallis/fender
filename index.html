@@ -17,30 +17,48 @@
     ></script>
   </head>
   <body>
-    <nav class="navigationBar">
-      <div id="logo">
-        <a href=""><img alt="fender-logo" src="./img/fender-282756.png" /> </a>
-      </div>
-      <ul class="navigationItems">
-        <li><a href="">Features</a></li>
-        <li><a href="">How it works</a></li>
-        <li><a href="">Pricing</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav id="nav-bar" class="navigationBar">
+        <div id="logo">
+          <a href=""
+            ><img
+              id="header-image"
+              alt="fender-logo"
+              src="./img/fender-282756.png"
+            />
+          </a>
+        </div>
+        <ul class="navigationItems">
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#video">How it works</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
     <div class="searchBar">
       <h3>Handcrafted, home-made masterpieces</h3>
-      <form class="mt-4" method="GET">
-        <input type="email" class="p-1" value="Enter your email address" />
-        <button
+      <form
+        action="https://www.freecodecamp.com/email-submit"
+        id="form"
+        class="mt-4"
+        method="POST"
+      >
+        <input
+          id="email"
+          type="email"
+          class="p-1"
+          placeholder="Enter your email address"
+        />
+
+        <input
+          id="submit"
           style="display: block;"
           class="btn btn-info m-1 text-center"
           type="submit"
-        >
-          GET STARTED
-        </button>
+        />
       </form>
     </div>
-    <div class="features mr-4 ml-4">
+    <div id="features" class="features mr-4 ml-4">
       <div class="feature">
         <h2><i class="fas fa-gift"></i> Premium Materials</h2>
         <p>
@@ -65,6 +83,7 @@
     </div>
     <div class="howItWorks mt-4">
       <iframe
+        id="video"
         width="560"
         height="315"
         src="https://www.youtube.com/embed/2yXm_3dEBNA"
@@ -73,7 +92,7 @@
         allowfullscreen
       ></iframe>
     </div>
-    <div class="pricing ml-3 mr-3 mt-4">
+    <div id="pricing" class="pricing ml-3 mr-3 mt-4">
       <div class="offer ml-2 mr-2">
         <img src="./img/LimitedEdition.jpg" alt="guitar" />
         <h3 class="productTitle">Limited Edition Lighttweight</h3>
@@ -129,7 +148,7 @@
         <p><a href="#">Terms</a></p>
         <p><a href="#">Contact</a></p>
       </div>
-      <p>Copyright &copy; 2020, Fender guitars</p>
+      <p id="copyRights">Copyright &copy; 2020, Fender guitars</p>
     </footer>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

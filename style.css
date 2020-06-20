@@ -6,6 +6,10 @@ body {
 div {
   display: block;
 }
+header {
+  position: sticky;
+  top: 0;
+}
 .navigationBar {
   display: flex;
   justify-content: space-between;
@@ -40,6 +44,7 @@ img {
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
+  /* margin-top: 150px; */
 }
 
 .searchBar > * {
