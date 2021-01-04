@@ -4,7 +4,7 @@ html {
 }
 body {
   min-width: fit-content;
-  margin: 5%;
+  margin: 0;
   padding: 0;
 }
 
@@ -19,6 +19,7 @@ div {
 header {
   position: sticky;
   top: 0;
+  height: auto;
 }
 
 #header-img {
@@ -66,7 +67,6 @@ img {
 
 .navigationBar img {
   width: 150px;
-  /* margin-left: auto; */
 }
 
 .searchBar {
@@ -74,7 +74,6 @@ img {
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
-  /* margin-top: 150px; */
 }
 
 .searchBar > * {
@@ -85,15 +84,16 @@ img {
   flex-direction: column;
   justify-content: center;
   margin: 5%;
-  /* margin: auto 5%; */
 }
-/* div.feautures.mr-4.ml-4 {
-  margin: 5%;
-} */
+
 .howItWorks {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+input#email {
+  padding: 0.33rem;
 }
 
 iframe {
@@ -108,25 +108,22 @@ iframe {
   flex-direction: row;
 }
 .offer {
+  display: flex-column;
   border: 0.5px solid bisque;
   border-radius: 1%;
-  flex: 1;
   text-align: center;
-  width: 20%;
+  width: 33%;
 }
 .offer button {
-  position: relative;
-  margin: 0;
-  bottom: 0px;
+  font-weight: bold;
+  font-size: 16pt;
+  margin-top: auto;
 }
 .offer img {
   height: 45%;
   width: 50%;
 }
-.offer button {
-  font-weight: bold;
-  font-size: 16pt;
-}
+
 .productDetails,
 .productTitle,
 .productPrice {
@@ -165,6 +162,11 @@ footer {
   margin: 0;
 }
 
+input#email:focus {
+  background-color: orange;
+  color: black;
+}
+
 @media (max-width: 576px) {
   .pricing {
     display: flex;
@@ -196,5 +198,11 @@ footer {
   }
   .productPrice {
     text-align: center;
+  }
+}
+
+@media (max-width: 770px) {
+  .offer {
+    font-size: 13px;
   }
 }
