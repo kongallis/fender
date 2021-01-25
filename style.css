@@ -8,10 +8,14 @@ body {
   padding: 0;
 }
 
-#nav-bar {
+img {
+  display: block;
+}
+
+/* #nav-bar {
   padding-top: 1rem;
   height: 12vh;
-}
+} */
 
 div {
   display: block;
@@ -22,14 +26,7 @@ header {
   height: auto;
 }
 
-#header-img {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 .navigationBar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: orange;
   /* background-color: orangered; */
 }
@@ -57,6 +54,7 @@ header {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 .navigationItems {
   display: flex;
