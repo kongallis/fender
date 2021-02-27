@@ -92,6 +92,7 @@ img {
 
 input#email {
   padding: 0.33rem;
+  display: block;
 }
 
 iframe {
